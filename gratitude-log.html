@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratitude Log: Free 3 Good Things Journal | SYZYGY Unwind</title>
+    <meta name="description" content="A free daily gratitude log based on the 'three good things' positive psychology exercise, linked to lower burnout and better mood. Streak-tracked.">
+    <link rel="canonical" href="https://sawerashaukat-debug.github.io/SYZYGY/unwind/gratitude-log.html">
+    <meta property="og:title" content="Gratitude Log | SYZYGY Unwind">
+    <meta property="og:description" content="A free daily gratitude log based on the 'three good things' positive psychology exercise, linked to lower burnout and better mood. Streak-tracked.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sawerashaukat-debug.github.io/SYZYGY/assets/og-image.png">
+    <meta property="og:url" content="https://sawerashaukat-debug.github.io/SYZYGY/unwind/gratitude-log.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gratitude Log | SYZYGY Unwind">
+    <meta name="twitter:description" content="A free daily gratitude log based on the 'three good things' positive psychology exercise, linked to lower burnout and better mood. Streak-tracked.">
+    <meta name="twitter:image" content="https://sawerashaukat-debug.github.io/SYZYGY/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Gratitude Log",
+        "url": "https://sawerashaukat-debug.github.io/SYZYGY/unwind/gratitude-log.html",
+        "description": "A free daily gratitude log based on the 'three good things' positive psychology exercise, linked to lower burnout and better mood. Streak-tracked.",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Any (Web Browser)",
+        "isAccessibleForFree": true,
+        "publisher": { "@type": "Organization", "name": "SYZYGY", "url": "https://sawerashaukat-debug.github.io/SYZYGY" }
+    }
+    </script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <nav class="site-nav" aria-label="Primary Navigation">
+                <div class="container">
+                    <a href="../index.html" class="logo" aria-label="SYZYGY Home">
+                        <div class="logo-symbol" aria-hidden="true">
+                            <span class="dot dot-1"></span>
+                            <span class="dot dot-2"></span>
+                            <span class="dot dot-3"></span>
+                            <span class="line line-1"></span>
+                            <span class="line line-2"></span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">SYZYGY</span>
+                        </div>
+                    </a>
+                    <div class="nav-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="../blog.html" class="nav-link">Insights</a></li>
+                            <li class="nav-item"><a href="../unwind.html" class="nav-link active" aria-current="page">Unwind</a></li>
+                            <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-actions">
+                        <a href="../blog.html" class="button-primary">Read Insights</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section class="unwind-hero" style="padding-bottom: 2rem;">
+                <div class="container">
+                    <a href="../unwind.html" class="tool-back-link">&larr; Back to Unwind</a>
+                    <span class="section-eyebrow">Reflect & Release</span>
+                    <h1>Gratitude Log</h1>
+                    <p>A daily 'three good things' practice — one of the most studied habits in positive psychology for lowering burnout and lifting mood.</p>
+                </div>
+            </section>
+
+            <section class="section" style="padding-top: 0;">
+                <div class="container" style="max-width: 720px;">
+
+                    <div class="unwind-note">
+                        <strong>Why this helps:</strong> Regularly naming small, specific things you're grateful for is one of the most studied practices in positive psychology, associated with lower burnout and improved mood over time. Three is enough — it doesn't need to be profound.
+                    </div>
+
+                    <div class="card unwind-tool-card">
+                        <span class="gratitude-streak" id="gratitudeStreak">🔥 0 day streak</span>
+                        <h2>Three good things</h2>
+                        <p class="unwind-tool-intro">Name three things, however small, that you're grateful for right now. Stored privately in this browser only.</p>
+
+                        <div class="gratitude-inputs">
+                            <div class="gratitude-input-row">
+                                <span class="gratitude-input-number">1</span>
+                                <input type="text" id="gratitude1" placeholder="A person, a moment, a small win..." autocomplete="off">
+                            </div>
+                            <div class="gratitude-input-row">
+                                <span class="gratitude-input-number">2</span>
+                                <input type="text" id="gratitude2" placeholder="Anything counts, big or small..." autocomplete="off">
+                            </div>
+                            <div class="gratitude-input-row">
+                                <span class="gratitude-input-number">3</span>
+                                <input type="text" id="gratitude3" placeholder="Even 'coffee' is a valid answer..." autocomplete="off">
+                            </div>
+                        </div>
+
+                        <button type="button" class="button-primary" id="gratitudeSaveBtn">Save today's three</button>
+
+                        <div class="gratitude-list" id="gratitudeList"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section section-light">
+                <div class="container" style="text-align:center;">
+                    <span class="section-eyebrow">More ways to reset</span>
+                    <h2>Explore the rest of Unwind</h2>
+                    <p style="max-width: 480px; margin: 0 auto var(--space-6);">Breathing exercises, journaling, creative play, and burnout-friendly focus tools — all free, all private.</p>
+                    <a href="../unwind.html" class="button-primary">Browse all tools</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column footer-brand">
+                        <a href="../index.html" class="logo" aria-label="SYZYGY Home">
+                            <div class="logo-symbol" aria-hidden="true">
+                                <span class="dot dot-1"></span>
+                                <span class="dot dot-2"></span>
+                                <span class="dot dot-3"></span>
+                                <span class="line line-1"></span>
+                                <span class="line line-2"></span>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-title">SYZYGY</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Explore</h3>
+                        <div class="footer-links">
+                            <a href="../blog.html">Insights</a>
+                            <a href="../unwind.html">Unwind</a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <div class="footer-links">
+                            <a href="../about.html">About</a>
+                            <a href="../contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../assets/js/utils.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const STORAGE_KEY = 'syzygy-gratitude-log';
+            const streakEl = document.getElementById('gratitudeStreak');
+            const listEl = document.getElementById('gratitudeList');
+            const saveBtn = document.getElementById('gratitudeSaveBtn');
+            const inputs = [document.getElementById('gratitude1'), document.getElementById('gratitude2'), document.getElementById('gratitude3')];
+
+            function todayKey() {
+                return new Date().toISOString().slice(0, 10);
+            }
+
+            function loadEntries() {
+                try {
+                    const raw = localStorage.getItem(STORAGE_KEY);
+                    return raw ? JSON.parse(raw) : [];
+                } catch (e) { return []; }
+            }
+
+            function saveEntries(entries) {
+                try { localStorage.setItem(STORAGE_KEY, JSON.stringify(entries)); } catch (e) {}
+            }
+
+            function computeStreak(entries) {
+                if (entries.length === 0) return 0;
+                const dates = new Set(entries.map(e => e.dateKey));
+                let streak = 0;
+                let cursor = new Date();
+                while (true) {
+                    const key = cursor.toISOString().slice(0, 10);
+                    if (dates.has(key)) {
+                        streak++;
+                        cursor.setDate(cursor.getDate() - 1);
+                    } else {
+                        break;
+                    }
+                }
+                return streak;
+            }
+
+            function renderList() {
+                const entries = loadEntries();
+                listEl.innerHTML = '';
+                streakEl.textContent = `🔥 ${computeStreak(entries)} day streak`;
+                entries.slice().reverse().slice(0, 30).forEach(entry => {
+                    const day = document.createElement('div');
+                    day.className = 'gratitude-day';
+                    const dateLabel = new Date(entry.dateKey).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+                    day.innerHTML = `<div class="gratitude-day-date">${dateLabel}</div><ul>${entry.items.map(i => `<li></li>`).join('')}</ul>`;
+                    const lis = day.querySelectorAll('li');
+                    entry.items.forEach((text, i) => { lis[i].textContent = text; });
+                    listEl.appendChild(day);
+                });
+            }
+
+            saveBtn.addEventListener('click', () => {
+                const items = inputs.map(i => i.value.trim()).filter(Boolean);
+                if (items.length === 0) {
+                    inputs[0].focus();
+                    return;
+                }
+                const key = todayKey();
+                let entries = loadEntries().filter(e => e.dateKey !== key);
+                entries.push({ dateKey: key, items });
+                saveEntries(entries);
+                inputs.forEach(i => i.value = '');
+                renderList();
+            });
+
+            renderList();
+        });
+    </script>
+</body>
+</html>

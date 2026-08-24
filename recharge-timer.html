@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus & Recharge Timer: Burnout-Friendly Timer | SYZYGY</title>
+    <meta name="description" content="A free focus timer with 25/5, 50/10, and 90/20 (ultradian rhythm) presets, built around burnout-prevention research on working in sprints with real breaks.">
+    <link rel="canonical" href="https://sawerashaukat-debug.github.io/SYZYGY/unwind/recharge-timer.html">
+    <meta property="og:title" content="Focus & Recharge Timer | SYZYGY Unwind">
+    <meta property="og:description" content="A free focus timer with 25/5, 50/10, and 90/20 (ultradian rhythm) presets, built around burnout-prevention research on working in sprints with real breaks.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sawerashaukat-debug.github.io/SYZYGY/assets/og-image.png">
+    <meta property="og:url" content="https://sawerashaukat-debug.github.io/SYZYGY/unwind/recharge-timer.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Focus & Recharge Timer | SYZYGY Unwind">
+    <meta name="twitter:description" content="A free focus timer with 25/5, 50/10, and 90/20 (ultradian rhythm) presets, built around burnout-prevention research on working in sprints with real breaks.">
+    <meta name="twitter:image" content="https://sawerashaukat-debug.github.io/SYZYGY/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Focus & Recharge Timer",
+        "url": "https://sawerashaukat-debug.github.io/SYZYGY/unwind/recharge-timer.html",
+        "description": "A free focus timer with 25/5, 50/10, and 90/20 (ultradian rhythm) presets, built around burnout-prevention research on working in sprints with real breaks.",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Any (Web Browser)",
+        "isAccessibleForFree": true,
+        "publisher": { "@type": "Organization", "name": "SYZYGY", "url": "https://sawerashaukat-debug.github.io/SYZYGY" }
+    }
+    </script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <nav class="site-nav" aria-label="Primary Navigation">
+                <div class="container">
+                    <a href="../index.html" class="logo" aria-label="SYZYGY Home">
+                        <div class="logo-symbol" aria-hidden="true">
+                            <span class="dot dot-1"></span>
+                            <span class="dot dot-2"></span>
+                            <span class="dot dot-3"></span>
+                            <span class="line line-1"></span>
+                            <span class="line line-2"></span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">SYZYGY</span>
+                        </div>
+                    </a>
+                    <div class="nav-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="../blog.html" class="nav-link">Insights</a></li>
+                            <li class="nav-item"><a href="../unwind.html" class="nav-link active" aria-current="page">Unwind</a></li>
+                            <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-actions">
+                        <a href="../blog.html" class="button-primary">Read Insights</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section class="unwind-hero" style="padding-bottom: 2rem;">
+                <div class="container">
+                    <a href="../unwind.html" class="tool-back-link">&larr; Back to Unwind</a>
+                    <span class="section-eyebrow">Recharge & Refocus</span>
+                    <h1>Focus & Recharge Timer</h1>
+                    <p>Work in sprints, then actually rest. A simple timer built around how attention and energy naturally cycle through the day.</p>
+                </div>
+            </section>
+
+            <section class="section" style="padding-top: 0;">
+                <div class="container" style="max-width: 720px;">
+
+                    <div class="unwind-note">
+                        <strong>Why this helps:</strong> Working in focused sprints with real breaks — rather than pushing through for hours — is a core recommendation in burnout-prevention research. Your ability to concentrate naturally dips every 60-90 minutes; short breaks work with that rhythm instead of against it.
+                    </div>
+
+                    <div class="card unwind-tool-card" style="text-align:center;">
+                        <span class="section-eyebrow">Recharge</span>
+                        <h2>Focus &amp; Recharge Timer</h2>
+                        <p class="unwind-tool-intro">Pick a work/break rhythm and let the timer handle the rest.</p>
+
+                        <div class="timer-presets" id="timerPresets" style="justify-content:center;">
+                            <button type="button" class="timer-preset-btn is-active" data-work="25" data-break="5">25 / 5 &mdash; Classic focus</button>
+                            <button type="button" class="timer-preset-btn" data-work="50" data-break="10">50 / 10 &mdash; Deep work</button>
+                            <button type="button" class="timer-preset-btn" data-work="90" data-break="20">90 / 20 &mdash; Ultradian cycle</button>
+                        </div>
+
+                        <div class="timer-face" id="timerFace" style="position:relative;">
+                            <div class="timer-face-inner">
+                                <div class="timer-time" id="timerTime">25:00</div>
+                                <div class="timer-phase" id="timerPhase">Focus</div>
+                            </div>
+                        </div>
+
+                        <div class="timer-controls">
+                            <button type="button" class="button-primary" id="timerStartBtn">Start</button>
+                            <button type="button" class="button-ghost" id="timerResetBtn">Reset</button>
+                        </div>
+
+                        <p class="timer-cycles" id="timerCycleCount">Focus sessions completed today: 0</p>
+                    </div>
+
+                    <div class="unwind-note" style="margin-top: var(--space-7); margin-bottom:0;">
+                        <strong>When your break starts:</strong> stand up, look away from your screen, and consider a two-minute <a href="box-breathing.html" style="color: var(--color-accent-secondary);">breathing reset</a> or a lap around the room. Breaks spent scrolling tend to be far less restorative.
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section section-light">
+                <div class="container" style="text-align:center;">
+                    <span class="section-eyebrow">More ways to reset</span>
+                    <h2>Explore the rest of Unwind</h2>
+                    <p style="max-width: 480px; margin: 0 auto var(--space-6);">Breathing exercises, journaling, creative play, and burnout-friendly focus tools — all free, all private.</p>
+                    <a href="../unwind.html" class="button-primary">Browse all tools</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column footer-brand">
+                        <a href="../index.html" class="logo" aria-label="SYZYGY Home">
+                            <div class="logo-symbol" aria-hidden="true">
+                                <span class="dot dot-1"></span>
+                                <span class="dot dot-2"></span>
+                                <span class="dot dot-3"></span>
+                                <span class="line line-1"></span>
+                                <span class="line line-2"></span>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-title">SYZYGY</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Explore</h3>
+                        <div class="footer-links">
+                            <a href="../blog.html">Insights</a>
+                            <a href="../unwind.html">Unwind</a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <div class="footer-links">
+                            <a href="../about.html">About</a>
+                            <a href="../contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../assets/js/utils.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const presetBtns = document.querySelectorAll('#timerPresets .timer-preset-btn');
+            const timeEl = document.getElementById('timerTime');
+            const phaseEl = document.getElementById('timerPhase');
+            const faceEl = document.getElementById('timerFace');
+            const startBtn = document.getElementById('timerStartBtn');
+            const resetBtn = document.getElementById('timerResetBtn');
+            const cycleEl = document.getElementById('timerCycleCount');
+
+            let workMinutes = 25;
+            let breakMinutes = 5;
+            let phase = 'focus';
+            let secondsLeft = workMinutes * 60;
+            let totalSeconds = workMinutes * 60;
+            let running = false;
+            let interval = null;
+            let sessionsCompleted = 0;
+
+            function formatTime(s) {
+                const m = Math.floor(s / 60).toString().padStart(2, '0');
+                const sec = (s % 60).toString().padStart(2, '0');
+                return `${m}:${sec}`;
+            }
+
+            function updateFace() {
+                timeEl.textContent = formatTime(secondsLeft);
+                phaseEl.textContent = phase === 'focus' ? 'Focus' : 'Break';
+                const progress = totalSeconds > 0 ? ((totalSeconds - secondsLeft) / totalSeconds) * 100 : 0;
+                faceEl.style.setProperty('--progress', progress.toFixed(1));
+                document.title = `${formatTime(secondsLeft)} — ${phase === 'focus' ? 'Focus' : 'Break'} | SYZYGY`;
+            }
+
+            function switchPhase() {
+                if (phase === 'focus') {
+                    sessionsCompleted++;
+                    cycleEl.textContent = `Focus sessions completed today: ${sessionsCompleted}`;
+                    phase = 'break';
+                    secondsLeft = breakMinutes * 60;
+                    totalSeconds = breakMinutes * 60;
+                } else {
+                    phase = 'focus';
+                    secondsLeft = workMinutes * 60;
+                    totalSeconds = workMinutes * 60;
+                }
+                updateFace();
+            }
+
+            function tick() {
+                secondsLeft--;
+                if (secondsLeft < 0) {
+                    switchPhase();
+                    return;
+                }
+                updateFace();
+            }
+
+            presetBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    presetBtns.forEach(b => b.classList.remove('is-active'));
+                    btn.classList.add('is-active');
+                    workMinutes = parseInt(btn.dataset.work, 10);
+                    breakMinutes = parseInt(btn.dataset.break, 10);
+                    resetTimer();
+                });
+            });
+
+            function resetTimer() {
+                clearInterval(interval);
+                running = false;
+                phase = 'focus';
+                secondsLeft = workMinutes * 60;
+                totalSeconds = workMinutes * 60;
+                startBtn.textContent = 'Start';
+                document.title = 'Focus & Recharge Timer | SYZYGY Unwind';
+                updateFace();
+            }
+
+            startBtn.addEventListener('click', () => {
+                if (running) {
+                    clearInterval(interval);
+                    running = false;
+                    startBtn.textContent = 'Resume';
+                } else {
+                    running = true;
+                    startBtn.textContent = 'Pause';
+                    interval = setInterval(tick, 1000);
+                }
+            });
+
+            resetBtn.addEventListener('click', resetTimer);
+
+            updateFace();
+        });
+    </script>
+</body>
+</html>

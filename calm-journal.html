@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Journal: A Free Private Mood Journal | SYZYGY Unwind</title>
+    <meta name="description" content="A free, private mood journal that never leaves your browser. Track how you're feeling and jot a quick note — linked to lower stress.">
+    <link rel="canonical" href="https://sawerashaukat-debug.github.io/SYZYGY/unwind/calm-journal.html">
+    <meta property="og:title" content="Calm Journal | SYZYGY Unwind">
+    <meta property="og:description" content="A free, private mood journal that never leaves your browser. Track how you're feeling and jot a quick note — linked to lower stress.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sawerashaukat-debug.github.io/SYZYGY/assets/og-image.png">
+    <meta property="og:url" content="https://sawerashaukat-debug.github.io/SYZYGY/unwind/calm-journal.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calm Journal | SYZYGY Unwind">
+    <meta name="twitter:description" content="A free, private mood journal that never leaves your browser. Track how you're feeling and jot a quick note — linked to lower stress.">
+    <meta name="twitter:image" content="https://sawerashaukat-debug.github.io/SYZYGY/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Calm Journal",
+        "url": "https://sawerashaukat-debug.github.io/SYZYGY/unwind/calm-journal.html",
+        "description": "A free, private mood journal that never leaves your browser. Track how you're feeling and jot a quick note — linked to lower stress.",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Any (Web Browser)",
+        "isAccessibleForFree": true,
+        "publisher": { "@type": "Organization", "name": "SYZYGY", "url": "https://sawerashaukat-debug.github.io/SYZYGY" }
+    }
+    </script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <nav class="site-nav" aria-label="Primary Navigation">
+                <div class="container">
+                    <a href="../index.html" class="logo" aria-label="SYZYGY Home">
+                        <div class="logo-symbol" aria-hidden="true">
+                            <span class="dot dot-1"></span>
+                            <span class="dot dot-2"></span>
+                            <span class="dot dot-3"></span>
+                            <span class="line line-1"></span>
+                            <span class="line line-2"></span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">SYZYGY</span>
+                        </div>
+                    </a>
+                    <div class="nav-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="../blog.html" class="nav-link">Insights</a></li>
+                            <li class="nav-item"><a href="../unwind.html" class="nav-link active" aria-current="page">Unwind</a></li>
+                            <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-actions">
+                        <a href="../blog.html" class="button-primary">Read Insights</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section class="unwind-hero" style="padding-bottom: 2rem;">
+                <div class="container">
+                    <a href="../unwind.html" class="tool-back-link">&larr; Back to Unwind</a>
+                    <span class="section-eyebrow">Reflect & Release</span>
+                    <h1>The Calm Journal</h1>
+                    <p>A private space to note how you're actually doing. Nothing here leaves your browser — it isn't sent to SYZYGY or anyone else.</p>
+                </div>
+            </section>
+
+            <section class="section" style="padding-top: 0;">
+                <div class="container" style="max-width: 720px;">
+
+                    <div class="unwind-note">
+                        <strong>Why this helps:</strong> Brief, low-pressure written check-ins are a form of expressive writing, a practice widely studied for reducing stress and improving emotional processing. Nothing here needs to be well-written — the noticing is the point.
+                    </div>
+
+                    <div class="card unwind-tool-card">
+                        <span class="section-eyebrow">Journal</span>
+                        <h2>The Calm Journal</h2>
+                        <p class="unwind-tool-intro">A private space to note how you're actually doing. Nothing here leaves your browser — it isn't sent to SYZYGY or anyone else.</p>
+
+                        <div class="mood-picker" role="group" aria-label="How are you feeling right now">
+                            <button type="button" class="mood-btn" data-mood="😔" aria-label="Struggling">😔</button>
+                            <button type="button" class="mood-btn" data-mood="😕" aria-label="Not great">😕</button>
+                            <button type="button" class="mood-btn" data-mood="😐" aria-label="Okay">😐</button>
+                            <button type="button" class="mood-btn" data-mood="🙂" aria-label="Good">🙂</button>
+                            <button type="button" class="mood-btn" data-mood="😄" aria-label="Great">😄</button>
+                        </div>
+
+                        <label class="visually-hidden" for="journalText">Write a journal entry</label>
+                        <textarea id="journalText" class="journal-textarea" placeholder="Write whatever's on your mind. A sentence is enough."></textarea>
+
+                        <div class="journal-actions">
+                            <button type="button" class="button-primary" id="saveEntryBtn">Save entry</button>
+                            <span class="journal-privacy-note">🔒 Stored only in this browser, on this device.</span>
+                        </div>
+
+                        <div class="journal-entries" id="journalEntries">
+                            <p class="journal-empty" id="journalEmptyState">No entries yet. Your first one will show up here.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section section-light">
+                <div class="container" style="text-align:center;">
+                    <span class="section-eyebrow">More ways to reset</span>
+                    <h2>Explore the rest of Unwind</h2>
+                    <p style="max-width: 480px; margin: 0 auto var(--space-6);">Breathing exercises, journaling, creative play, and burnout-friendly focus tools — all free, all private.</p>
+                    <a href="../unwind.html" class="button-primary">Browse all tools</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column footer-brand">
+                        <a href="../index.html" class="logo" aria-label="SYZYGY Home">
+                            <div class="logo-symbol" aria-hidden="true">
+                                <span class="dot dot-1"></span>
+                                <span class="dot dot-2"></span>
+                                <span class="dot dot-3"></span>
+                                <span class="line line-1"></span>
+                                <span class="line line-2"></span>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-title">SYZYGY</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Explore</h3>
+                        <div class="footer-links">
+                            <a href="../blog.html">Insights</a>
+                            <a href="../unwind.html">Unwind</a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <div class="footer-links">
+                            <a href="../about.html">About</a>
+                            <a href="../contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../assets/js/utils.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const STORAGE_KEY = 'syzygy-calm-journal';
+            const moodButtons = document.querySelectorAll('.mood-btn');
+            const journalText = document.getElementById('journalText');
+            const saveEntryBtn = document.getElementById('saveEntryBtn');
+            const journalEntriesEl = document.getElementById('journalEntries');
+            const emptyState = document.getElementById('journalEmptyState');
+            let selectedMood = null;
+
+            moodButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    moodButtons.forEach(b => b.classList.remove('is-selected'));
+                    btn.classList.add('is-selected');
+                    selectedMood = btn.dataset.mood;
+                });
+            });
+
+            function loadEntries() {
+                try {
+                    const raw = localStorage.getItem(STORAGE_KEY);
+                    return raw ? JSON.parse(raw) : [];
+                } catch (e) { return []; }
+            }
+
+            function saveEntries(entries) {
+                try { localStorage.setItem(STORAGE_KEY, JSON.stringify(entries)); } catch (e) {}
+            }
+
+            function renderEntries() {
+                const entries = loadEntries();
+                journalEntriesEl.querySelectorAll('.journal-entry').forEach(el => el.remove());
+                if (entries.length === 0) {
+                    if (emptyState) emptyState.style.display = 'block';
+                    return;
+                }
+                if (emptyState) emptyState.style.display = 'none';
+                entries.slice().reverse().forEach(entry => {
+                    const el = document.createElement('div');
+                    el.className = 'journal-entry';
+                    el.innerHTML = `
+                        <div class="journal-entry-body">
+                            <div class="journal-entry-meta">
+                                <span>${entry.mood || '📝'}</span>
+                                <span>${entry.date}</span>
+                            </div>
+                            <p class="journal-entry-text"></p>
+                        </div>
+                        <button type="button" class="journal-entry-delete" aria-label="Delete entry">✕</button>
+                    `;
+                    el.querySelector('.journal-entry-text').textContent = entry.text;
+                    el.querySelector('.journal-entry-delete').addEventListener('click', () => {
+                        const remaining = loadEntries().filter(e => e.id !== entry.id);
+                        saveEntries(remaining);
+                        renderEntries();
+                    });
+                    journalEntriesEl.appendChild(el);
+                });
+            }
+
+            if (saveEntryBtn) {
+                saveEntryBtn.addEventListener('click', () => {
+                    const text = journalText.value.trim();
+                    if (!text) { journalText.focus(); return; }
+                    const entries = loadEntries();
+                    entries.push({
+                        id: Date.now(),
+                        mood: selectedMood,
+                        text: text,
+                        date: new Date().toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })
+                    });
+                    saveEntries(entries);
+                    journalText.value = '';
+                    moodButtons.forEach(b => b.classList.remove('is-selected'));
+                    selectedMood = null;
+                    renderEntries();
+                });
+            }
+
+            renderEntries();
+        });
+    </script>
+</body>
+</html>

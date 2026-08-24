@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Breathing Exercise (Free Online Tool) | SYZYGY Unwind</title>
+    <meta name="description" content="A free, guided box breathing exercise with 4-4-4-4, 4-7-8, and calming patterns. Used in stress-management training to calm the nervous system in minutes.">
+    <link rel="canonical" href="https://sawerashaukat-debug.github.io/SYZYGY/unwind/box-breathing.html">
+    <meta property="og:title" content="Box Breathing Exercise | SYZYGY Unwind">
+    <meta property="og:description" content="A free, guided box breathing exercise with 4-4-4-4, 4-7-8, and calming patterns. Used in stress-management training to calm the nervous system in minutes.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sawerashaukat-debug.github.io/SYZYGY/assets/og-image.png">
+    <meta property="og:url" content="https://sawerashaukat-debug.github.io/SYZYGY/unwind/box-breathing.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Box Breathing Exercise | SYZYGY Unwind">
+    <meta name="twitter:description" content="A free, guided box breathing exercise with 4-4-4-4, 4-7-8, and calming patterns. Used in stress-management training to calm the nervous system in minutes.">
+    <meta name="twitter:image" content="https://sawerashaukat-debug.github.io/SYZYGY/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Box Breathing Exercise",
+        "url": "https://sawerashaukat-debug.github.io/SYZYGY/unwind/box-breathing.html",
+        "description": "A free, guided box breathing exercise with 4-4-4-4, 4-7-8, and calming patterns. Used in stress-management training to calm the nervous system in minutes.",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Any (Web Browser)",
+        "isAccessibleForFree": true,
+        "publisher": { "@type": "Organization", "name": "SYZYGY", "url": "https://sawerashaukat-debug.github.io/SYZYGY" }
+    }
+    </script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <nav class="site-nav" aria-label="Primary Navigation">
+                <div class="container">
+                    <a href="../index.html" class="logo" aria-label="SYZYGY Home">
+                        <div class="logo-symbol" aria-hidden="true">
+                            <span class="dot dot-1"></span>
+                            <span class="dot dot-2"></span>
+                            <span class="dot dot-3"></span>
+                            <span class="line line-1"></span>
+                            <span class="line line-2"></span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">SYZYGY</span>
+                        </div>
+                    </a>
+                    <div class="nav-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="../blog.html" class="nav-link">Insights</a></li>
+                            <li class="nav-item"><a href="../unwind.html" class="nav-link active" aria-current="page">Unwind</a></li>
+                            <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-actions">
+                        <a href="../blog.html" class="button-primary">Read Insights</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section class="unwind-hero" style="padding-bottom: 2rem;">
+                <div class="container">
+                    <a href="../unwind.html" class="tool-back-link">&larr; Back to Unwind</a>
+                    <span class="section-eyebrow">Calm & Breathe</span>
+                    <h1>Box Breathing</h1>
+                    <p>A slow, structured breathing pattern used in stress-management training to calm the nervous system in under two minutes. No sign-up, nothing saved.</p>
+                </div>
+            </section>
+
+            <section class="section" style="padding-top: 0;">
+                <div class="container" style="max-width: 720px;">
+
+                    <div class="unwind-note">
+                        <strong>Why this helps:</strong> Box breathing — inhale, hold, exhale, hold, each for a slow count of four — is a technique used in stress-management training and cognitive behavioral therapy to help calm the nervous system. It works by slowing your breathing rate, which signals your body to shift out of "fight or flight" mode.
+                    </div>
+
+                    <div class="card unwind-tool-card" style="text-align:center;">
+                        <div class="timer-preset-btn is-active" style="display:none;"></div>
+                        <div class="breath-pattern-select" style="display:flex; justify-content:center; gap:.6rem; margin-bottom: var(--space-7); flex-wrap:wrap;">
+                            <button type="button" class="timer-preset-btn is-active" data-pattern="box">Box (4-4-4-4)</button>
+                            <button type="button" class="timer-preset-btn" data-pattern="478">Relaxing (4-7-8)</button>
+                            <button type="button" class="timer-preset-btn" data-pattern="calm">Calming (4-6)</button>
+                        </div>
+
+                        <div class="breath-wrap" style="margin-top:0;">
+                            <div class="breath-circle" id="breathCircle" aria-hidden="true"></div>
+                            <p class="breath-label" id="breathLabel">Breathe in...</p>
+                            <p class="breath-hint" id="breathHint">Follow the circle. Press start when you're ready.</p>
+                        </div>
+
+                        <div class="grounding-actions" style="margin-top: var(--space-6);">
+                            <button type="button" class="button-primary" id="breathStartBtn">Start session</button>
+                            <button type="button" class="button-ghost" id="breathStopBtn" style="display:none;">Stop</button>
+                        </div>
+                        <p class="timer-cycles" id="breathCycleCount" style="margin-top: var(--space-4);"></p>
+                    </div>
+
+                    <div class="unwind-note" style="margin-top: var(--space-7); margin-bottom:0;">
+                        <strong>Good moments to use this:</strong> before a hard conversation, between meetings, after a stressful email, or anytime your thoughts are moving faster than you'd like.
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section section-light">
+                <div class="container" style="text-align:center;">
+                    <span class="section-eyebrow">More ways to reset</span>
+                    <h2>Explore the rest of Unwind</h2>
+                    <p style="max-width: 480px; margin: 0 auto var(--space-6);">Breathing exercises, journaling, creative play, and burnout-friendly focus tools — all free, all private.</p>
+                    <a href="../unwind.html" class="button-primary">Browse all tools</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column footer-brand">
+                        <a href="../index.html" class="logo" aria-label="SYZYGY Home">
+                            <div class="logo-symbol" aria-hidden="true">
+                                <span class="dot dot-1"></span>
+                                <span class="dot dot-2"></span>
+                                <span class="dot dot-3"></span>
+                                <span class="line line-1"></span>
+                                <span class="line line-2"></span>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-title">SYZYGY</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Explore</h3>
+                        <div class="footer-links">
+                            <a href="../blog.html">Insights</a>
+                            <a href="../unwind.html">Unwind</a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <div class="footer-links">
+                            <a href="../about.html">About</a>
+                            <a href="../contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../assets/js/utils.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const patterns = {
+                box:  { name: 'Box breathing', phases: [['Breathe in...', 4], ['Hold...', 4], ['Breathe out...', 4], ['Hold...', 4]] },
+                478:  { name: '4-7-8 relaxing breath', phases: [['Breathe in...', 4], ['Hold...', 7], ['Breathe out slowly...', 8]] },
+                calm: { name: 'Calming breath', phases: [['Breathe in...', 4], ['Breathe out slowly...', 6]] }
+            };
+
+            const circle = document.getElementById('breathCircle');
+            const label = document.getElementById('breathLabel');
+            const hint = document.getElementById('breathHint');
+            const startBtn = document.getElementById('breathStartBtn');
+            const stopBtn = document.getElementById('breathStopBtn');
+            const cycleCountEl = document.getElementById('breathCycleCount');
+            const patternBtns = document.querySelectorAll('.breath-pattern-select .timer-preset-btn');
+
+            let currentPattern = 'box';
+            let running = false;
+            let phaseIndex = 0;
+            let cycles = 0;
+            let phaseTimeout = null;
+
+            patternBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (running) return;
+                    patternBtns.forEach(b => b.classList.remove('is-active'));
+                    btn.classList.add('is-active');
+                    currentPattern = btn.dataset.pattern;
+                    label.textContent = patterns[currentPattern].phases[0][0];
+                });
+            });
+
+            function runPhase() {
+                if (!running) return;
+                const phases = patterns[currentPattern].phases;
+                const [text, seconds] = phases[phaseIndex];
+                label.textContent = text;
+                circle.style.animation = 'none';
+                void circle.offsetWidth;
+                const grow = /in/i.test(text);
+                const hold = /hold/i.test(text);
+                circle.style.transition = `transform ${seconds}s ease-in-out`;
+                circle.style.transform = hold ? circle.style.transform : (grow ? 'scale(1)' : 'scale(0.72)');
+
+                phaseTimeout = setTimeout(() => {
+                    phaseIndex++;
+                    if (phaseIndex >= phases.length) {
+                        phaseIndex = 0;
+                        cycles++;
+                        cycleCountEl.textContent = `Cycles completed: ${cycles}`;
+                    }
+                    runPhase();
+                }, seconds * 1000);
+            }
+
+            startBtn.addEventListener('click', () => {
+                running = true;
+                phaseIndex = 0;
+                cycles = 0;
+                cycleCountEl.textContent = 'Cycles completed: 0';
+                hint.textContent = "Follow the circle. It's okay to close your eyes between glances.";
+                startBtn.style.display = 'none';
+                stopBtn.style.display = 'inline-flex';
+                circle.style.transform = 'scale(0.72)';
+                runPhase();
+            });
+
+            stopBtn.addEventListener('click', () => {
+                running = false;
+                clearTimeout(phaseTimeout);
+                startBtn.style.display = 'inline-flex';
+                stopBtn.style.display = 'none';
+                label.textContent = patterns[currentPattern].phases[0][0];
+                hint.textContent = 'Follow the circle. Press start when you\'re ready.';
+                circle.style.transition = 'transform 1s ease';
+                circle.style.transform = 'scale(0.72)';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sawerashaukat-debug.github.io/SYZYGY/sitemap.xml
